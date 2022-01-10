@@ -37,3 +37,9 @@ $(document).ready(function() {
     })
 });
 
+// Responsive Tab Services
+$(document).ready(function() {
+    $('#services-tab').responsiveTabs({
+        animation: 'slide',
+    });
+})
