@@ -552,3 +552,104 @@ ul.social-list li:nth-child(3) a:hover {
     line-height: 24px;
     margin-bottom: 30px;
 }
+
+/* ------------ Portfolio Section ----------- */
+#portfolio .vertical-heading {
+    margin-bottom: 50px;
+}
+
+.row.no-gutters [class *= "col-"]{
+    padding: 0;
+}
+
+/* ------------ Portfolio Section (Filter) ----------- */
+#isotope-filters button {
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: transparent;
+    box-shadow: none;
+    padding-right: 35px;
+    
+
+}
+
+#isotope-filters button span {
+    display: block;
+    padding-bottom: 5px;
+}
+
+#isotope-filters button.active,
+#isotope-filters button:focus {
+    outline: none;
+}
+
+#isotope-filters button.active span {
+    color: #f4c613;
+    border-bottom: 3px solid #f4c613;
+}
+
+/* ------------ Portfolio Section (Zoom Effect) ----------- */
+.portfolio-item {
+    overflow: hidden;
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s linear;
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.1);
+}
+
+/* ------------ Portfolio Section (Overlay) ----------- */
+.portfolio-item-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    cursor: zoom-in;
+    background-color: rgba(33, 33, 33, 0.8);
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.portfolio-item:hover .portfolio-item-overlay {
+    opacity: 1;
+}
+.portfolio-item-details {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.portfolio-item-details h3 {
+    color: #f4c613;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+}
+
+.portfolio-item-details span {
+    display: inline-block;
+    width: 30px;
+    height: 6px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    margin: 11px auto 5px auto;
+}
+
+.portfolio-item-details p {
+    font-size: 17px;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+}
