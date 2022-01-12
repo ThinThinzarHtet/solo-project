@@ -570,9 +570,7 @@ ul.social-list li:nth-child(3) a:hover {
     text-transform: uppercase;
     background-color: transparent;
     box-shadow: none;
-    padding-right: 35px;
-    
-
+    padding-right: 35px;   
 }
 
 #isotope-filters button span {
@@ -652,4 +650,73 @@ ul.social-list li:nth-child(3) a:hover {
     text-transform: uppercase;
     margin: 0;
     padding: 0;
+}
+
+/* ------------ Blank Section ----------- */
+.blank {
+    width: 100%;
+    height: 150px;
+    background-color: #fff;
+}
+
+/* ------------ Testimonial Section ----------- */
+#testimonials {
+    background-color: #f4f4f4;
+    padding-bottom: 45px;
+    overflow: visible;
+}
+
+#testimonials .vertical-heading {
+    padding: 80px 0;
+    margin-bottom: 50px;
+}
+
+#testimonial-slider {
+    background-color: #f4c613;
+    top: -120px;
+}
+
+.testimonial {
+    padding: 20px 45px 0 45px;
+    color: #fff;
+}
+
+.testimonial h3 {
+    font-size: 32px;
+    line-height: 35px;
+}
+
+.testimonial .stars {
+    font-size: 20px;
+    margin: 20px 0 10px 0;
+}
+
+#testimonials .owl-nav[class*="owl-"] {
+    font-size: 45px;
+}
+
+#testimonial-slider.owl-theme .owl-nav [class*=owl-]:hover {
+    color: #fff;
+    background-color: #f4c613;
+    text-decoration: none;
+}
+
+#testimonial-slider.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: #fff;
+}
+
+.testimonial p {
+    line-height: normal;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.author .author-name-det {
+    width: 200px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.author .author-name-det p {
+    margin: 0;
 }

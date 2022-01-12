@@ -6,7 +6,7 @@ $(window).on('load', function() {
 
 // Carousel Plugin
 $(document).ready(function() {
-    $(".owl-carousel").owlCarousel(
+    $("#team-members").owlCarousel(
         {
             loop:true,
             margin:10,
@@ -70,4 +70,23 @@ $(document).ready(function() {
             enabled: true
           }
       });
+})
+
+// Testimonial
+$(document).ready(function() {
+    $("#testimonial-slider").owlCarousel(
+        {
+            loop:true,
+            margin:10,
+            nav:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                1000:{
+                    items:1
+                }
+            }
+        }
+    );
 })
