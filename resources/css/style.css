@@ -834,3 +834,56 @@ ul.social-list li:nth-child(3) a:hover {
     color: #212221;
 }
 
+/* ------------ Status Section ----------- */
+#stats {
+    background: url('../img/stats/stats-bg.jpg') no-repeat fixed center;
+    background-size: cover;
+}
+
+#stats .content-box-md {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#stats .vertical-heading {
+    margin-bottom: 50px;
+}
+
+#stats .vertical-heading h2 {
+    color: #fff;
+}
+
+.stats-item {
+    background-color: rgba(61, 68, 68, 0.8);
+    border-radius: 4px;
+    min-height: 170px;
+    padding: 25px 50px;
+    transition: all 0.5s linear;
+}
+
+.stats-item i {
+    font-size: 42px;
+    color: #f4c613;
+    margin: 0 0 6px 0;
+    transition: all 0.5s linear;
+}
+
+.stats-item h3 {
+    font-size: 32px;
+    color: #fff;
+    margin: 5px 0;
+}
+
+.stats-item p {
+    color: #fff;
+    margin: 0;
+}
+
+.stats-item:hover {
+    background-color: #f4c613;
+    
+}
+
+.stats-item:hover i {
+    color: #212221;
+    transform: translateY(-20px);
+}
