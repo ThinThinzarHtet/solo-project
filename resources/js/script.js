@@ -76,9 +76,9 @@ $(document).ready(function() {
 $(document).ready(function() {
     $("#testimonial-slider").owlCarousel(
         {
-            loop:true,
-            margin:10,
-            nav:true,
+            loop: true,
+            margin: 10,
+            nav: true,
             responsive:{
                 0:{
                     items:1
@@ -97,4 +97,26 @@ $(document).ready(function() {
             delay: 10,
             time: 1000
         });
+});
+
+// Client Section
+$(document).ready(function() {
+    $('#client-list').owlCarousel(
+        {
+            loop: true,
+            margin: 10,
+            nav: true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:3
+                },
+                1000:{
+                    items:5
+                }
+            }
+        }
+    );
 });
