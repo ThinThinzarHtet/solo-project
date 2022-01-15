@@ -893,10 +893,6 @@ ul.social-list li:nth-child(3) a:hover {
 }
 
 /* ---------- Client Section ---------- */
-#client {
-    background-color: #f4f4f4;
-}
-
 #client .horizontal-heading {
     margin-bottom: 30px;
 }
@@ -907,7 +903,7 @@ ul.social-list li:nth-child(3) a:hover {
 
 #client .owl-theme .owl-nav [class*=owl-]:hover {
     color: #f4c613;
-    background-color: #f4f4f4;
+    background-color: #fff;
     text-decoration: none;
 }
 
