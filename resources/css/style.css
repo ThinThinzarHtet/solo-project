@@ -1052,3 +1052,23 @@ ul.office-detail li i {
     border-color: #f4c613;
     box-shadow: 1px 1px 10px #f4c613
 }
+
+/* --------- Google Map Section --------- */
+#map {
+    height: 600px;
+}
+
+/* --------- Footer Section --------- */
+footer {
+    background-color: #212221;
+    padding: 30px;
+}
+
+footer p {
+    color: #fff;
+    line-height: 20px;
+}
+
+footer p span {
+    color: #f4c613;
+}
