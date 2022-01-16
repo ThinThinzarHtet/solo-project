@@ -130,3 +130,33 @@ function initMap() {
     zoom: 8,
   });
 }
+
+// Nav Bar Section
+$(document).ready(function() {
+    $(window).scroll(function() {
+        // For Show
+        if($(window).scrollTop() > 50) {
+            $('nav').addClass('white-nav-top');
+            $('.navbar-brand img').attr('src', './resources/img/logo/logo-dark.png');
+            $('.btn-back-to-top').css('opacity', '1');
+            $('#back-to-top').fadeIn();
+        } else {
+            // For Hide
+            $('nav').removeClass('white-nav-top');
+            $('.navbar-brand img').attr('src', './resources/img/logo/logo.png');
+            $('#back-to-top').fadeOut();
+        }
+    })
+})
+
+// Scroll Effect
+$(document).ready(function() {
+    $('a.smooth-scroll').click(function(event) {
+        event.preventDefault();
+        var select_id = $(this).attr('href');
+        $('html, body').animate({
+            scrollTop: $(select_id).offset().top - 64
+        }, 1250,
+        'easeInOutExpo');
+    });
+})

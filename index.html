@@ -48,13 +48,39 @@
     <!-- custom css -->
     <link rel="stylesheet" href="resources/css/style.css">
   </head>
-  <body>
+  <body data-spy="scroll" data-target=".navbar" data-offset="65">
     <!-- Pre Loader -->
     <div id="preloader">
       <div id="status">&nbsp;</div>
     </div>
+
+    <!-- Nav Bar -->
+    <header id="header">
+      <nav class="navbar navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="site-nav-wrap">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="#home"><img src="./resources/img/logo/logo.png" alt="solo-logo"></a>
+            </div>
+            <div class="container">
+              <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav pull-right">
+                  <li><a href="#home" class="smooth-scroll">Home</a></li>
+                  <li><a href="#about" class="smooth-scroll">About</a></li>
+                  <li><a href="#team" class="smooth-scroll">Team</a></li>
+                  <li><a href="#services" class="smooth-scroll">Services</a></li>
+                  <li><a href="#portfolio" class="smooth-scroll">Work</a></li>
+                  <li><a href="#blog" class="smooth-scroll">Blog</a></li>
+                  <li><a href="#contact" class="smooth-scroll">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
     <!-- home section -->
-    <header id="home">
+    <section id="home">
       <!-- background video -->
       <video id="home-bg-video" poster="video/solo.jpg" autoplay loop muted>
         <source src="video/solo.mp4" type="video/mp4" />
@@ -71,15 +97,15 @@
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis quod facere deserunt sint esse maiores dolorum ullam consequatur quasi voluptatum tempora iure</p>
           </div>
           <div id="home-btn">
-            <a href="#about" class="btn btn-general btn-home">Start Now</a>
+            <a href="#about" class="btn btn-general btn-home smooth-scroll">Start Now</a>
           </div>
           <!-- Arrow Down -->
           <a href="#about" id="arrow-down">
-            <i class="fas fa-chevron-down"></i>
+            <i class="fas fa-chevron-down smooth-scroll"></i>
           </a>
         </div>
       </div>
-    </header>
+    </section>
 
     <!-- About Section -->
     <section id="about">
@@ -1170,7 +1196,9 @@
           </div>
         </div>
       </div>
-
+      <a href="#home" id="back-to-top" class="btn btn-sm btn-yellow btn-back-to-top smooth-scroll" title="home" role="button">
+        <i class="fas fa-angle-up"></i>
+      </a>
     </footer>
 
 
@@ -1200,6 +1228,9 @@
 
     <!-- map API -->
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBS3RcV3YVbiBi_6i6wUFqgBsChtZNQKm4&callback=initMap"></script>
+
+    <!-- jquery.easing.1.3.js -->
+    <script src="./vendors/js/jquery.easing.1.3.js"></script>
 
 
     <!-- custom js -->

@@ -94,7 +94,7 @@ section {
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: 2;
+    z-index: 5;
 }
 
 #status {
@@ -109,8 +109,9 @@ section {
 }
 
 /* --------------- Home Section -------------- */
-header {
+#home {
     height: 100%;
+    background: none;
 }
 
 #home-bg-video {
@@ -1071,4 +1072,73 @@ footer p {
 
 footer p span {
     color: #f4c613;
+}
+
+/* --------- Nav Section --------- */
+.navbar {
+    padding: 35px 0 25px 0;
+}
+
+.site-nav-wrap {
+    padding: 0 85px;
+}
+
+.navbar-brand {
+    padding: 13px 15px;
+}
+
+ul.navbar-nav > li > a {
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+ul.navbar-nav > li > a:hover,
+ul.navbar-nav > li > a:focus {
+    background: none;
+    color: #f4c613;
+}
+
+/* --------- White Nav Section --------- */
+.white-nav-top {
+    background-color: #fff;
+    padding: 10px 0;
+    box-shadow: 0 8px 6px -9px #999;
+    z-index: 2;
+}
+
+.white-nav-top ul.navbar-nav > li > a {
+    color: #212221;
+}
+
+.white-nav-top ul.navbar-nav > li > a:hover {
+    color: #f4c613;
+}
+
+/* --------- ScrollSpy White Nav --------- */
+.white-nav-top ul.navbar-nav > li.active a {
+    color: #f4c613;
+    font-weight: 500;
+}
+
+/* --------- Button Back To Top Arrow --------- */
+.btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 3px 15px;
+    border-radius: 4px;
+    font-size: 22px;
+    border: none;
+    opacity: 0;
+}
+
+.btn-back-to-top:hover,
+.btn-back-to-top:focus {
+    background-color: #f4c613;
+    color: #212221;
+    border: none;
 }
